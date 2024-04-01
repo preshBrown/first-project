@@ -1,0 +1,101 @@
+body {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+#landing-header{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#landing-header h1{
+    color:#fff;
+}
+
+.slideshow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: o;
+    padding: 0;
+}
+
+.slideshow li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+}
+
+/* .slideshow li:nth-child(1){
+    background-image: url("NYC-City-Scapes-Samsung-Galaxy-S5-Latest-Wallpapers-Download.JPG")
+}
+.slideshow li:nth-child(2){
+    background-image: url("41-Best-and-Coolest-Collection-HD-Wallpapers-Ever-17.JPG");
+    animation-delay: 10s;
+}
+.slideshow li:nth-child(3){
+    background-image: url("Geek-DNA-Samsung-Galaxy-S5-Latest-Wallpapers-Download.JPG");
+    animation-delay: 20s;
+}
+.slideshow li:nth-child(4){
+    background-image: url("Lamborghini-Venevo-Best-Samsung-Galaxy-S5-Latest-Wallpapers-Download-HD.JPG");
+    animation-delay: 30s;
+}
+.slideshow li:nth-child(5){
+    background-image: url("Mountains roof.JPG");
+    animation-delay: 40s;
+} */
+
+.slideshow li:nth-child(1){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyXd8MGHn3iCOAcz6ScxTVQZ5zz1mjKsxgw&usqp=CAU)
+}
+.slideshow li:nth-child(2){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrb_l-9F5PXRvAqdSLpw2le0DRxDejYCsBbw&usqp=CAU);
+    animation-delay: 10s;
+}
+.slideshow li:nth-child(3){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhABR1cF1f4o9cF_dH-k1Q2qEu1lJ52X5D2Q&usqp=CAU);
+    animation-delay: 20s;
+}
+.slideshow li:nth-child(4){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg12SoEcQkrPI0BmwybC6cQoAUuPVvhl3Urg&usqp=CAU);
+    animation-delay: 30s;
+}
+.slideshow li:nth-child(5){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-q7MwITCXqNkyOB2MGecVvly5CLGsqXTxSw&usqp=CAU);
+    animation-delay: 40s;
+}
+
+
+
+
+@keyframes imageAnimation {
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10%{
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+}

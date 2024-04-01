@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="/bootstrap4.css">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+</head>
+<body>
+<!-- <%- include ('partials/header')  %> -->
+
+<div class="container">
+ <% if (error && error.length > 0){ %>
+  <div class="alert alert-danger" role="alert">
+    <%=  error %>
+  </div>
+<% } %>
+<% if (error && success.length > 0){ %>
+  <div class="alert alert-success" role="alert">
+    <%=  success %>  
+  </div>
+  <% } %>
+</div>
+
+<div id="landing-header">
+    <h1>welcome to yelpCamp</h1>
+    <a class="btn btn-success btn-sm" href="/campground">View All Campgrounds</a>
+</div>
+
+<ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<img src="NYC-City-Scapes-Samsung-Galaxy-S5-Latest-Wallpapers-Download.JPG" alt="">
+
+<%- include ('partials/footer') %>
