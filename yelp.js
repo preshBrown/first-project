@@ -31,15 +31,7 @@ var express        = require('express'),
         });
 
   
-    // mongoose.connect("mongodb+srv://preshBrown:professional19@dev1.6a8np.mongodb.net/yelp_camp_v12Deployed",  {useNewUrlParser: true, useUnifiedTopology: true}, function(err){
-    //     if(err){
-    //         console.log(err);
-    //         console.log("DB ERROR");
-    //     } else{console.log("DB CONNECTED")}
-    // });
-
-    // mongodb+srv://dev1:professional19@dev1.6a8np.mongodb.net/yelp_camp_v12Deployed
-    // mongodb://localhost:27017/yelp_camp_v12Deployed
+  
 
     
     app.use(bodyparser.urlencoded({extended:true}));
